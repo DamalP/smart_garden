@@ -1,0 +1,999 @@
+//login form styles-------------------------
+
+.login-background {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+
+  .loginForm {
+    width: 70vw;
+    height: 80vh;
+    background-color: white;
+    border-radius: 30px;
+    -webkit-box-shadow: $back-shadow;
+    box-shadow: $back-shadow;
+
+    .form-cover {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      overflow: hidden;
+      background-repeat: no-repeat;
+      padding-top: 25vh;
+      border-bottom-left-radius: 30px;
+      border-top-left-radius: 30px;
+
+      h2 {
+        font-size: 2.3em;
+        font-weight: 500;
+        margin-left: 6vw;
+        margin-right: 4vw;
+        line-height: 45px;
+        color: white;
+      }
+
+      p {
+        margin-top: 20px;
+        margin-left: 6vw;
+        margin-right: 4vw;
+        color: white;
+      }
+
+      button {
+        margin-top: 20px;
+        margin-left: 6vw;
+        margin-right: 4vw;
+        background-color: white;
+        color: black;
+        padding: 6px 30px;
+        border-radius: 7px;
+        font-size: 1.2em;
+        border: none;
+        outline: none;
+        transition: 0.5s;
+        &:hover {
+          color: white;
+          background-image: $button-gradient-hover;
+          transition: 0.5s;
+        }
+      }
+    }
+    .form-content {
+      padding-top: 14vh;
+
+      label {
+        margin-left: 5vw;
+        margin-right: 5vw;
+
+        p {
+          margin-top: 10px;
+          font-size: 0.95em;
+        }
+
+        input {
+          &:focus {
+            outline: none;
+            border: none;
+          }
+        }
+
+        .link-area {
+          .check-box {
+            width: unset;
+            margin-right: 1vw;
+            margin-left: 0;
+          }
+
+          .check-box-text {
+            font-size: 0.8em;
+            margin-left: 0;
+            margin-right: 0;
+          }
+          a {
+            font-size: 0.8em;
+            color: $link-blue;
+            transition: 0.5s;
+
+            &:hover {
+              text-decoration: underline;
+              transition: 0.5s;
+            }
+          }
+        }
+
+        button {
+          text-align: center;
+          background-image: $button-gradient;
+          padding: 10px 15px;
+          border-radius: 8px;
+          font-size: 12px;
+          color: white;
+          transition: 0.5s;
+
+          &:hover {
+            background-image: $button-gradient-hover;
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+  }
+}
+
+//signup page styles-------------------------------
+
+.signup-background {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+
+  .signupForm {
+    width: 70vw;
+    height: 80vh;
+    background-color: white;
+    border-radius: 30px;
+    -webkit-box-shadow: $back-shadow;
+    box-shadow: $back-shadow;
+
+    .form-cover {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      overflow: hidden;
+      background-repeat: no-repeat;
+      padding-top: 28vh;
+      border-bottom-left-radius: 30px;
+      border-top-left-radius: 30px;
+
+      h2 {
+        font-size: 2.3em;
+        font-weight: 500;
+        margin-left: 6vw;
+        margin-right: 4vw;
+        line-height: 45px;
+        color: white;
+      }
+
+      p {
+        margin-top: 20px;
+        margin-left: 6vw;
+        margin-right: 4vw;
+        color: white;
+      }
+
+      button {
+        margin-top: 20px;
+        margin-left: 6vw;
+        margin-right: 4vw;
+        background-color: white;
+        color: black;
+        padding: 6px 30px;
+        border-radius: 7px;
+        font-size: 1.2em;
+        border: none;
+        outline: none;
+        transition: 0.5s;
+        &:hover {
+          color: white;
+          background-image: $button-gradient-hover;
+          transition: 0.5s;
+        }
+      }
+    }
+    .form-content {
+      padding-top: 10vh;
+
+      label {
+        margin-left: 5vw;
+        margin-right: 5vw;
+
+        p {
+          margin-top: 10px;
+          font-size: 0.95em;
+        }
+
+        input {
+          &:focus {
+            outline: none;
+            border: none;
+          }
+        }
+
+        .link-area {
+          .check-box {
+            width: unset;
+            margin-right: 1vw;
+            margin-left: 0;
+          }
+
+          .check-box-text {
+            font-size: 0.8em;
+            margin-left: 0;
+            margin-right: 0;
+          }
+          a {
+            font-size: 0.8em;
+            color: $link-blue;
+            transition: 0.5s;
+
+            &:hover {
+              text-decoration: underline;
+              transition: 0.5s;
+            }
+          }
+        }
+
+        button {
+          text-align: center;
+          background-image: $button-gradient;
+          padding: 10px 15px;
+          border-radius: 8px;
+          font-size: 12px;
+          color: white;
+          transition: 0.5s;
+
+          &:hover {
+            background-image: $button-gradient-hover;
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: $tablet-l) {
+
+  //login form styles -----------------------------
+
+  .login-background {
+    .loginForm {
+      height: 88vh;
+      width: 77vw;
+      .form-cover {
+        padding-top: 28vh;
+        h2 {
+          font-size: 2em;
+          line-height: 40px;
+        }
+        p {
+          .line-breaker {
+            display: none;
+          }
+        }
+      }
+      .form-content {
+        overflow: hidden;
+        padding-top: 15vh;
+
+        p {
+          margin-top: 10px;
+          font-size: 0.9em;
+          .line-breaker {
+            display: none;
+          }
+        }
+
+        input {
+          margin-top: 1.3rem;
+          &:focus {
+            outline: none;
+            border: none;
+          }
+        }
+
+        .link-area {
+          .check-box {
+            width: unset;
+            margin-right: 1vw;
+            margin-left: 0;
+          }
+
+          .check-box {
+            margin-top: 0;
+          }
+
+          .check-box-text {
+            font-size: 0.8em;
+          }
+
+          a {
+            font-size: 0.8em;
+            color: $link-blue;
+            transition: 0.5s;
+            &:hover {
+              text-decoration: underline;
+              transition: 0.5s;
+            }
+          }
+        }
+
+        button {
+          text-align: center;
+          background-image: $button-gradient;
+          padding: 10px 15px;
+          border-radius: 8px;
+          font-size: 12px;
+          color: white;
+          transition: 0.5s;
+          &:hover {
+            background-image: $button-gradient-hover;
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+  }
+
+  //signup form styles ----------------------------
+
+  .signup-background {
+    .signupForm {
+      height: 88vh;
+      width: 77vw;
+      .form-cover {
+        padding-top: 28vh;
+        h2 {
+          font-size: 2em;
+          line-height: 40px;
+        }
+        p {
+          font-size: 1em;
+        }
+      }
+      .form-content {
+        overflow: hidden;
+        padding-top: 13vh;
+
+        label {
+          p {
+            margin-top: 10px;
+            font-size: 0.85em;
+          }
+
+          input {
+            margin-top: 0.8rem;
+
+            &:focus {
+              outline: none;
+              border: none;
+            }
+          }
+
+          .link-area {
+            .check-box {
+              width: unset;
+              margin-right: 1vw;
+              margin-left: 0;
+            }
+
+            .check-box {
+              margin-top: 0;
+            }
+
+            .check-box-text {
+              font-size: 0.8em;
+            }
+
+            a {
+              font-size: 0.8em;
+              color: $link-blue;
+              transition: 0.5s;
+
+              &:hover {
+                text-decoration: underline;
+                transition: 0.5s;
+              }
+            }
+          }
+        }
+
+        button {
+          text-align: center;
+          background-image: $button-gradient;
+          padding: 10px 15px;
+          border-radius: 8px;
+          font-size: 12px;
+          color: white;
+          transition: 0.5s;
+          margin-top: 1.5rem;
+          &:hover {
+            background-image: $button-gradient-hover;
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: $tablet-m) {
+
+  //login form styles -----------------------------
+
+  .login-background {
+    .loginForm {
+      width: 85vw;
+      height: 118vh;
+      border-radius: 32px;
+      .form-cover {
+        padding-top: 12vh;
+        padding-bottom: 0;
+        border-radius: 0;
+        border-top-right-radius: 32px;
+        h2 {
+          font-size: 1.5em;
+          line-height: 30px;
+        }
+        p {
+          font-size: 0.9em;
+          line-height: 19px;
+          margin-top: 10px;
+          .line-breaker {
+            display: none;
+          }
+        }
+        button {
+          margin-top: 20px;
+          font-size: 0.9em;
+          padding: 7px 40px;
+          border-radius: 7px;
+        }
+      }
+      .form-content {
+        padding-top: 6vh;
+        form {
+          .inline-grid {
+            h2 {
+              font-size: 1.5em;
+              margin-bottom: 1.1rem;
+            }
+            p {
+              font-size: 0.9em;
+              line-height: 18px;
+              margin-top: 10px;
+              .line-breaker {
+                display: none;
+              }
+            }
+            input {
+              border-radius: 5px;
+              margin-top: 1rem;
+            }
+            .link-area {
+              display: block;
+              margin-top: 1rem;
+              .remind-password{
+                position: relative;
+                margin-bottom: 0.5rem;
+              }
+              .forget-password {
+                position: relative;
+              }
+            }
+            button {
+              margin-top: 1rem;
+              margin-bottom: 0rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //signup form styles ----------------------------
+
+  .signup-background {
+    .signupForm {
+      width: 85vw;
+      height: 150vh;
+      border-radius: 32px;
+      .form-cover {
+        padding-top: 12vh;
+        padding-bottom: 0vh;
+        border-radius: 0;
+        border-top-right-radius: 32px;
+        h2 {
+          font-size: 1.5em;
+          line-height: 30px;
+        }
+        p {
+          font-size: 0.9em;
+          line-height: 19px;
+          margin-top: 10px;
+          .line-breaker {
+            display: none;
+          }
+        }
+        button {
+          margin-top: 20px;
+          font-size: 0.9em;
+          padding: 7px 40px;
+          border-radius: 7px;
+        }
+      }
+      .form-content {
+        padding-top: 9vh;
+        form {
+          .inline-grid {
+            h2 {
+              font-size: 1.5em;
+              margin-bottom: 0;
+            }
+            p {
+              font-size: 0.9em;
+              line-height: 18px;
+              margin-top: 10px;
+              .line-breaker {
+                display: none;
+              }
+            }
+            .name-inputs, .password-inputs {
+              gap: 0;
+            }
+            input {
+              border-radius: 5px;
+              margin-top: 1rem;
+            }
+            .link-area {
+              display: block;
+              margin-top: 1rem;
+              .remind-password{
+                position: relative;
+                margin-bottom: 0.5rem;
+              }
+              .forget-password {
+                position: relative;
+              }
+            }
+            button {
+              margin-top: 1rem;
+              margin-bottom: 0rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-l) {
+
+  //login form styles -----------------------------
+
+  .login-background {
+    .loginForm {
+      width: 85vw;
+      height: 118vh;
+      border-radius: 20px;
+      .form-cover {
+        padding-top: 12vh;
+        padding-bottom: 0;
+        border-radius: 0;
+        border-top-right-radius: 20px;
+        h2 {
+          font-size: 1.1em;
+          line-height: 22px;
+        }
+        p {
+          font-size: 0.8em;
+          line-height: 19px;
+          margin-top: 10px;
+          .line-breaker {
+            display: none;
+          }
+        }
+        button {
+          margin-top: 20px;
+          font-size: 0.8em;
+          padding: 5px 30px;
+          border-radius: 5px;
+        }
+      }
+      .form-content {
+        padding-top: 6vh;
+        form {
+          .inline-grid {
+            h2 {
+              font-size: 1.1em;
+            }
+            p {
+              font-size: 0.8em;
+              line-height: 18px;
+              margin-top: 10px;
+              .line-breaker {
+                display: none;
+              }
+            }
+            input {
+              border-radius: 5px;
+              margin-top: 1rem;
+            }
+            .link-area {
+              display: block;
+              margin-top: 1rem;
+              .remind-password{
+                position: relative;
+                margin-bottom: 0.5rem;
+              }
+              .forget-password {
+                position: relative;
+              }
+            }
+            button {
+              margin-top: 1rem;
+              margin-bottom: 0rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //signup form styles ----------------------------
+
+  .signup-background {
+    .signupForm {
+      width: 85vw;
+      height: 155vh;
+      border-radius: 32px;
+      .form-cover {
+        padding-top: 12vh;
+        padding-bottom: 0vh;
+        border-radius: 0;
+        border-top-right-radius: 32px;
+        h2 {
+          font-size: 1.5em;
+          line-height: 30px;
+        }
+        p {
+          font-size: 0.9em;
+          line-height: 19px;
+          margin-top: 10px;
+          .line-breaker {
+            display: none;
+          }
+        }
+        button {
+          margin-top: 20px;
+          font-size: 0.9em;
+          padding: 7px 40px;
+          border-radius: 7px;
+        }
+      }
+      .form-content {
+        padding-top: 8vh;
+        form {
+          .inline-grid {
+            h2 {
+              font-size: 1.5em;
+              margin-bottom: 0;
+            }
+            p {
+              font-size: 0.9em;
+              line-height: 21px;
+              margin-top: 10px;
+              .line-breaker {
+                display: none;
+              }
+            }
+            .name-inputs, .password-inputs {
+              gap: 0;
+            }
+            input {
+              border-radius: 5px;
+              margin-top: 1rem;
+            }
+            .link-area {
+              display: block;
+              margin-top: 1rem;
+              .remind-password{
+                position: relative;
+                margin-bottom: 0.5rem;
+              }
+              .forget-password {
+                position: relative;
+              }
+            }
+            button {
+              margin-top: 1rem;
+              margin-bottom: 0rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-m) {
+
+  //login form styles -----------------------------
+
+  .login-background {
+    .loginForm {
+      width: 85vw;
+      height: 118vh;
+      border-radius: 18px;
+      .form-cover {
+        padding-top: 12vh;
+        padding-bottom: 0;
+        border-radius: 0;
+        border-top-right-radius: 18px;
+        h2 {
+          font-size: 1.1em;
+          line-height: 22px;
+        }
+        p {
+          font-size: 0.8em;
+          line-height: 19px;
+          margin-top: 10px;
+          .line-breaker {
+            display: none;
+          }
+        }
+        button {
+          margin-top: 20px;
+          font-size: 0.8em;
+          padding: 5px 30px;
+          border-radius: 5px;
+        }
+      }
+      .form-content {
+        padding-top: 6vh;
+        form {
+          .inline-grid {
+            h2 {
+              font-size: 1.1em;
+            }
+            p {
+              font-size: 0.7em;
+              line-height: 17px;
+              margin-top: 10px;
+              .line-breaker {
+                display: none;
+              }
+            }
+            input {
+              border-radius: 5px;
+              margin-top: 1rem;
+            }
+            .link-area {
+              display: block;
+              margin-top: 1rem;
+              .remind-password{
+                position: relative;
+                margin-bottom: 0.5rem;
+              }
+              .forget-password {
+                position: relative;
+              }
+            }
+            button {
+              margin-top: 1rem;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //signup form styles ----------------------------
+
+  .signup-background {
+    .signupForm {
+      width: 85vw;
+      height: 155vh;
+      border-radius: 32px;
+      .form-cover {
+        padding-top: 12vh;
+        padding-bottom: 0vh;
+        border-radius: 0;
+        border-top-right-radius: 32px;
+        h2 {
+          font-size: 1.5em;
+          line-height: 30px;
+        }
+        p {
+          font-size: 0.9em;
+          line-height: 19px;
+          margin-top: 10px;
+          .line-breaker {
+            display: none;
+          }
+        }
+        button {
+          margin-top: 20px;
+          font-size: 0.9em;
+          padding: 7px 40px;
+          border-radius: 7px;
+        }
+      }
+      .form-content {
+        padding-top: 7vh;
+        form {
+          .inline-grid {
+            h2 {
+              font-size: 1.5em;
+              margin-bottom: 0;
+            }
+            p {
+              font-size: 0.8em;
+              line-height: 21px;
+              margin-top: 10px;
+              .line-breaker {
+                display: none;
+              }
+            }
+            .name-inputs, .password-inputs {
+              gap: 0;
+            }
+            input {
+              border-radius: 5px;
+              margin-top: 1rem;
+            }
+            .link-area {
+              display: block;
+              margin-top: 1rem;
+              .remind-password{
+                position: relative;
+                margin-bottom: 0.5rem;
+              }
+              .forget-password {
+                position: relative;
+              }
+            }
+            button {
+              margin-top: 1rem;
+              margin-bottom: 0rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-s) {
+
+  //login form styles -----------------------------
+
+  .login-background {
+    .loginForm {
+      border-radius: 15px;
+      .form-cover {
+        border-top-right-radius: 15px;
+        h2 {
+          font-size: 1.1em;
+          line-height: 22px;
+        }
+        p {
+          font-size: 0.8em;
+          line-height: 19px;
+          margin-top: 10px;
+          .line-breaker {
+            display: none;
+          }
+        }
+        button {
+          margin-top: 10px;
+          font-size: 0.8em;
+          padding: 5px 30px;
+          border-radius: 5px;
+        }
+      }
+      .form-content {
+        padding-top: 6vh;
+        form {
+          .inline-grid {
+            h2 {
+              font-size: 1.1em;
+            }
+            p {
+              font-size: 0.7em;
+              line-height: 17px;
+              margin-top: 10px;
+              .line-breaker {
+                display: none;
+              }
+            }
+            input {
+              border-radius: 5px;
+              margin-top: 1rem;
+            }
+            .link-area {
+              display: block;
+              margin-top: 1rem;
+              .remind-password{
+                position: relative;
+                margin-bottom: 0.5rem;
+              }
+              .forget-password {
+                position: relative;
+              }
+            }
+            button {
+              margin-top: 1rem;
+              margin-bottom: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //signup form styles ----------------------------
+
+  .signup-background {
+    .signupForm {
+      border-radius: 15px;
+      height: 140vh;
+      .form-cover {
+        border-top-right-radius: 15px;
+        h2 {
+          font-size: 1.1em;
+          line-height: 22px;
+        }
+        p {
+          font-size: 0.8em;
+          line-height: 19px;
+          margin-top: 10px;
+          .line-breaker {
+            display: none;
+          }
+        }
+        button {
+          margin-top: 10px;
+          font-size: 0.8em;
+          padding: 5px 30px;
+          border-radius: 5px;
+        }
+      }
+      .form-content {
+        padding-top: 6vh;
+        form {
+          .inline-grid {
+            h2 {
+              font-size: 1.1em;
+            }
+            p {
+              font-size: 0.7em;
+              line-height: 17px;
+              margin-top: 10px;
+              .line-breaker {
+                display: none;
+              }
+            }
+            input {
+              border-radius: 5px;
+              margin-top: 1rem;
+            }
+            .link-area {
+              display: block;
+              margin-top: 1rem;
+              .remind-password{
+                position: relative;
+                margin-bottom: 0.5rem;
+              }
+              .forget-password {
+                position: relative;
+              }
+            }
+            button {
+              margin-top: 1rem;
+              margin-bottom: 0rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
